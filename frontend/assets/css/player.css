@@ -1,21 +1,29 @@
 .player {
-  display: flex;
-  align-items: center;
+  background: linear-gradient(180deg, #fdbe83 0%, #c8a3b5 50%, #2f4e68 100%);
   justify-content: center;
-  min-height: 100vh;
-  background: linear-gradient(10deg, #fcb886 0%, #12727d 100%, #894329 50%);
+}
+
+.wrapper {
+  width: 300px;
+  background-color: rgba(255,255,255,0.23);
+  box-shadow: 0px 6px 15px #393f4b;
+  border-radius: 15px;
+  padding: 25px 30px;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(40px);
 }
 
 @media (min-width: 768px) {
   .wrapper {
     width: 830px;
-    background: #fff;
-    box-shadow: 0px 6px 15px #515c6f;
+    background-color: rgba(255,255,255,0.23);
+    box-shadow: 0px 6px 15px #393f4b;
     border-radius: 15px;
     padding: 25px 30px;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(10deg, rgb(252,184,134) 0%, rgb(18,114,125) 100%, rgb(137,67,41) 50%);
+    backdrop-filter: blur(40px);
   }
 }
 
@@ -36,14 +44,14 @@
 
 .top-bar span {
   font-size: 18px;
-  color: #515c6f;
+  color: #161c26;
 }
 
 .img-area {
   height: 256px;
   width: 100%;
   border-radius: 15px;
-  box-shadow: 0px 6px 15px #515c6f;
+  box-shadow: 0px 6px 15px #262c34;
   overflow: hidden;
   margin-top: 25px;
 }
@@ -63,12 +71,14 @@
 .book-details .name {
   font-size: 21px;
   margin-bottom: 0px;
+  color: rgb(0,0,0);
 }
 
 .book-details .author {
-  opacity: 0.9;
+  opacity: 0.90;
   font-size: 18px;
   margin-bottom: 0px;
+  color: rgb(16,18,20);
 }
 
 .progress-area {
@@ -83,7 +93,7 @@
   height: 100%;
   width: 50%;
   border-radius: inherit;
-  background: linear-gradient(90deg, #fcb886 0%, #12727d 100%, #894329 50%);
+  background: linear-gradient(90deg, #b28474 0%, #0b1320 100%);
   position: relative;
 }
 
@@ -122,7 +132,7 @@
 .controls i {
   font-size: 28px;
   user-select: none;
-  background: linear-gradient(90deg, #1eb6f5 0%, #203550 100%);
+  background: linear-gradient(90deg, #b28474 0%, #0b1320 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -143,8 +153,8 @@
 .controls .play-pause {
   height: 54px;
   width: 54px;
-  background: linear-gradient(90deg, #fff 0%, #cecaca 100%);
-  box-shadow: 0 0 5px #1eb6f5;
+  background: linear-gradient(#e6d9d7 0%, #cecaca 100%);
+  box-shadow: 0 0 5px #304655;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -157,7 +167,7 @@
   content: "";
   position: absolute;
   border-radius: inherit;
-  background: linear-gradient(90deg, #1eb6f5 0%, #203550 100%);
+  background: linear-gradient(90deg, #b28474 0%, #0b1320 100%);
 }
 
 .play-pause i {
@@ -246,5 +256,16 @@ ul li .audio-duration {
 
 .book-list ul::-webkit-scrollbar {
   width: 0px;
+}
+
+h6 .prf .mb-2 .text-primary {
+  color: rgba(47,23,15,0.88);
+}
+
+.fplayer {
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  display: flex;
 }
 

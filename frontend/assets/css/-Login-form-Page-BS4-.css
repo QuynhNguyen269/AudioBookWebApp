@@ -5,7 +5,7 @@
 #login-block {
   -webkit-box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.4);
   -moz-box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.4);
-  box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 45px 0px #00000066;
   z-index: 2;
 }
 
@@ -43,22 +43,6 @@
   }
 }
 
-form {
-}
-
-@media (min-width: 992px) {
-  form {
-    box-shadow: 0px 0px 11px #fed136;
-    padding: 30px;
-  }
-}
-
-@media (min-width: 768px) {
-  #login-block {
-    box-shadow: none;
-  }
-}
-
 @media (min-width: 1400px) {
   .section-heading.book {
     padding-bottom: 0px;
@@ -73,6 +57,9 @@ form {
   color: rgba(47,23,15,0.88);
 }
 
-.profile {
+.w-lg-75.w-xl-50 {
+  filter: blur(0px);
+  box-shadow: 0px 0px 1px rgb(0,0,0);
+  padding: 20px;
 }
 

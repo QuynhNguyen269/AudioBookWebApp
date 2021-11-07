@@ -55,7 +55,7 @@ body {
 }
 
 #page-top {
-  background-color: #fae6df;
+  background: linear-gradient(180deg, #ffc895 0%, #c8a3b5 50%, #2f4e68 100%);
 }
 
 .page-section {
@@ -186,11 +186,6 @@ a:hover {
   color: #cba72b;
 }
 
-#team {
-  background-color: #fff;
-  padding-top: 50px;
-}
-
 section#contact .section-heading {
   color: #fff;
 }
@@ -298,16 +293,6 @@ section#contact .form-group textarea.form-control {
   color: #000;
   background-color: #feda5e;
   border-color: #fed64a;
-}
-
-#contact {
-  background-image: url("pexels-olya-kobruseva-6794049.jpg");
-}
-
-@media (min-width: 768px) {
-  #contact {
-    background-image: url("../../assets/img/pexels-carmela-dinardo-1669648.jpg");
-  }
 }
 
 svg.hover {
@@ -419,5 +404,27 @@ a {
 
 .text-primary {
   color: #fed136 !important;
+}
+
+#services {
+  box-shadow: 0px 0px 8px rgb(33, 37, 41);
+  padding: 100px 0px;
+}
+
+#team {
+  box-shadow: 0px 0px 8px rgb(33, 37, 41);
+  padding: 100px 0px;
+}
+
+.colservices:not:first-child {
+  margin-left: 5px;
+}
+
+#contact {
+  padding: 100px 0px;
+}
+
+#portfolio {
+  padding: 100px 0px;
 }
 

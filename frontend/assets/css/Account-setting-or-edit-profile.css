@@ -51,13 +51,15 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(180deg, #fdbe83 0%, #c8a3b5 50%, #2f4e68 100%);
+  background: #e3c0a4;
 }
 
 .ctF-profile {
   box-shadow: 0px 0px 11px rgb(49,55,61);
   backdrop-filter: blur(40px);
-  background: rgba(207,209,216,0.63);
+  background: #2f170f83;
+  padding: 20px;
+  margin: 0px 0px 30px 0px;
 }
 
 .card {

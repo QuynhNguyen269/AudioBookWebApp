@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/book.css">
     <link rel="stylesheet" href="assets/css/Brands.css">
     <link rel="stylesheet" href="assets/css/Footer-Clean.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/Login-Form-Dark.css">
     <link rel="stylesheet" href="assets/css/player.css">
@@ -25,7 +26,7 @@
     <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
 </head>
 
-<body>
+<body id="book">
     <nav class="navbar navbar-dark navbar-expand-lg sticky-top bg-dark" id="mainNav" style="opacity: 1;">
         <div class="container"><a class="logo" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" class="align-content-start" style="width: 45px;height: 45px;opacity: 1;">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9513 15.571C17.7695 17.2187 16.9205 18.6654 15.6805 19.635C15.332 20.4692 14.7092 21.1601 13.9247 21.5951C13.7025 22.4574 12.9196 23.0944 11.9879 23.0944C11.0562 23.0944 10.2733 22.4574 10.0511 21.5951C9.26672 21.1602 8.64392 20.4693 8.29547 19.6353C7.05955 18.6691 6.21203 17.229 6.02621 15.5883C4.93527 16.4161 3.37955 16.4118 2.28618 15.4944C1.01696 14.4294 0.851409 12.5371 1.91641 11.2679L6.00966 6.38975C6.27125 3.31753 8.84785 0.905579 11.9878 0.905579C15.1166 0.905579 17.6861 3.30046 17.9631 6.35711L22.0837 11.2679C23.1487 12.5371 22.9831 14.4294 21.7139 15.4944C20.613 16.4182 19.0433 16.4161 17.9513 15.571ZM15.6254 12.9056L13.9472 10.9056H10.0529L8.37467 12.9056H15.6254ZM17.9878 12.6095L19.0195 13.839C19.3745 14.2621 20.0053 14.3173 20.4283 13.9623C20.8514 13.6073 20.9066 12.9765 20.5516 12.5535L17.9878 9.49803V12.6095ZM15.9878 8.90558V6.90558C15.9878 4.69644 14.1969 2.90558 11.9878 2.90558C9.77865 2.90558 7.98779 4.69644 7.98779 6.90558V8.90558H15.9878ZM4.98059 13.839L5.98779 12.6387V9.52726L3.4485 12.5535C3.0935 12.9765 3.14869 13.6073 3.57176 13.9623C3.99483 14.3173 4.62559 14.2621 4.98059 13.839ZM11.9878 18.9056C9.77865 18.9056 7.98779 17.1147 7.98779 14.9056H15.9878C15.9878 17.1147 14.1969 18.9056 11.9878 18.9056Z" fill="currentColor"></path>
@@ -41,166 +42,983 @@
             </div>
         </div>
     </nav>
-    <section id="kindofbook" style="padding: 100px 0px;background: url(&quot;assets/img/Background/star-sky.jpg&quot;) center / cover;">
-        <div class="container" style="opacity: 1;filter: blur(0px);">
+    <section id="kindofbook">
+        <div class="container d-flex flex-column detailkindtop">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="text-uppercase section-headingbook">KIND OF BOOKS</h2>
                 </div>
             </div>
-            <div class="row text-center">
-                <div class="col-md-4 col-book"><a class="booklink" href="#Adventure">
-                        <div class="divbook" style="box-shadow: 0px 0px 13px;"><span class="fa-stack fa-3x">Tt<i class="fa fa-circle fa-stack-2x text-primary-book" style="filter: blur(13px);"></i><i class="fa fa-motorcycle fa-stack-1x fa-inverse-book" style="filter: blur(0px);"></i></span>
+            <div class="row text-center d-flex flex-row justify-content-evenly align-items-stretch flex-wrap">
+                <div class="col-md-3 d-flex flex-column col-book"><a class="booklink" href="#Adventure">
+                        <div class="divbook"><span class="fa-stack fa-3x"><i class="fa fa-circle fa-stack-2x text-primary-book"></i><i class="fa fa-motorcycle fa-stack-1x fa-inverse-book"></i></span>
                             <h4 class="section-heading-book">Adventure</h4>
                         </div>
                     </a></div>
-                <div class="col-md-4 col-book"><a class="booklink" href="#Action">
-                        <div class="divbook" style="box-shadow: 0px 0px 13px;"><span class="fa-stack fa-3x">Tt<i class="fa fa-circle fa-stack-2x text-primary-book" style="filter: blur(13px);"></i><i class="fa fa-cube fa-stack-1x fa-inverse-book" style="filter: blur(0px);"></i></span>
+                <div class="col-md-3 d-flex flex-column col-book"><a class="booklink" href="#Classic">
+                        <div class="divbook"><span class="fa-stack fa-3x"><i class="fa fa-circle fa-stack-2x text-primary-book"></i><i class="fa fa-cube fa-stack-1x fa-inverse-book"></i></span>
                             <h4 class="text-center section-heading-book">Classics</h4>
                         </div>
                     </a></div>
-                <div class="col-md-4 col-book"><a class="booklink" href="#Action">
-                        <div class="divbook" style="box-shadow: 0px 0px 13px;"><span class="fa-stack fa-3x">Tt<i class="fa fa-circle fa-stack-2x text-primary-book" style="filter: blur(13px);"></i><i class="fa fa-paint-brush fa-stack-1x fa-inverse-book" style="filter: blur(0px);"></i></span>
+                <div class="col-md-3 d-flex flex-column col-book"><a class="booklink" href="#GraphicNovel">
+                        <div class="divbook"><span class="fa-stack fa-3x"><i class="fa fa-circle fa-stack-2x text-primary-book"></i><i class="fa fa-paint-brush fa-stack-1x fa-inverse-book"></i></span>
                             <h4 class="text-center section-heading-book">Graphic Novel</h4>
                         </div>
                     </a></div>
-                <div class="col-md-4 col-book"><a class="booklink" href="#Action">
-                        <div class="divbook" style="box-shadow: 0px 0px 13px;"><span class="fa-stack fa-3x">Tt<i class="fa fa-circle fa-stack-2x text-primary-book" style="filter: blur(13px);"></i><i class="fa fa-search fa-stack-1x fa-inverse-book" style="filter: blur(0px);"></i></span>
+                <div class="col-md-3 d-flex flex-column col-book"><a class="booklink" href="#Detective">
+                        <div class="divbook"><span class="fa-stack fa-3x"><i class="fa fa-circle fa-stack-2x text-primary-book"></i><i class="fa fa-search fa-stack-1x fa-inverse-book"></i></span>
                             <h4 class="text-center section-heading-book">Detective</h4>
                         </div>
                     </a></div>
-                <div class="col-md-4 col-book"><a class="booklink" href="#Action">
-                        <div class="divbook" style="box-shadow: 0px 0px 13px;"><span class="fa-stack fa-3x">Tt<i class="fa fa-circle fa-stack-2x text-primary-book" style="filter: blur(13px);"></i><i class="fa fa-lightbulb-o fa-stack-1x fa-inverse-book" style="filter: blur(0px);"></i></span>
+                <div class="col-md-3 d-flex flex-column col-book"><a class="booklink" href="#Fantasy">
+                        <div class="divbook"><span class="fa-stack fa-3x"><i class="fa fa-circle fa-stack-2x text-primary-book"></i><i class="fa fa-lightbulb-o fa-stack-1x fa-inverse-book"></i></span>
                             <h4 class="text-center section-heading-book">Fantasy</h4>
                         </div>
                     </a></div>
-                <div class="col-md-4 col-book"><a class="booklink" href="#Action">
-                        <div class="divbook" style="box-shadow: 0px 0px 13px;"><span class="fa-stack fa-3x">Tt<i class="fa fa-circle fa-stack-2x text-primary-book" style="filter: blur(13px);"></i><i class="fa fa-fort-awesome fa-stack-1x fa-inverse-book" style="filter: blur(0px);"></i></span>
+                <div class="col-md-3 d-flex flex-column col-book"><a class="booklink" href="#HistoricalFiction">
+                        <div class="divbook"><span class="fa-stack fa-3x"><i class="fa fa-circle fa-stack-2x text-primary-book"></i><i class="fa fa-fort-awesome fa-stack-1x fa-inverse-book"></i></span>
                             <h4 class="text-center section-heading-book"><strong>Historical Fiction</strong><br></h4>
                         </div>
                     </a></div>
-                <div class="col-md-4 col-book"><a class="booklink" href="#Action">
-                        <div class="divbook" style="box-shadow: 0px 0px 13px;"><span class="fa-stack fa-3x">Tt<i class="fa fa-circle fa-stack-2x text-primary-book" style="filter: blur(13px);"></i><i class="fa fa-optin-monster fa-stack-1x fa-inverse-book" style="filter: blur(0px);"></i></span>
-                            <h4 class="text-center section-heading-book"><strong>Horror</strong><br></h4>
+                <div class="col-md-3 d-flex flex-column col-book"><a class="booklink" href="#Horror">
+                        <div class="divbook"><span class="fa-stack fa-3x"><i class="fa fa-circle fa-stack-2x text-primary-book"></i><i class="fa fa-optin-monster fa-stack-1x fa-inverse-book"></i></span>
+                            <h4 class="text-center section-heading-book"><strong>Horror/Thrillers</strong><br></h4>
                         </div>
                     </a></div>
-                <div class="col-md-4 col-book"><a class="booklink" href="#Action">
-                        <div class="divbook" style="box-shadow: 0px 0px 13px;"><span class="fa-stack fa-3x">Tt<i class="fa fa-circle fa-stack-2x text-primary-book" style="filter: blur(13px);"></i><i class="fa fa-pagelines fa-stack-1x fa-inverse-book" style="filter: blur(0px);"></i></span>
+                <div class="col-md-3 d-flex flex-column col-book"><a class="booklink" href="#LiteraryFiction">
+                        <div class="divbook"><span class="fa-stack fa-3x"><i class="fa fa-circle fa-stack-2x text-primary-book"></i><i class="fa fa-pagelines fa-stack-1x fa-inverse-book"></i></span>
                             <h4 class="text-center section-heading-book"><strong>Literary Fiction</strong><br></h4>
                         </div>
                     </a></div>
-                <div class="col-md-4 col-book"><a class="booklink" href="#Action">
-                        <div class="divbook" style="box-shadow: 0px 0px 13px;"><span class="fa-stack fa-3x">Tt<i class="fa fa-circle fa-stack-2x text-primary-book" style="filter: blur(13px);"></i><i class="fa fa-heart fa-stack-1x fa-inverse-book" style="filter: blur(0px);"></i></span>
+                <div class="col-md-3 d-flex flex-column col-book"><a class="booklink" href="#Romance">
+                        <div class="divbook"><span class="fa-stack fa-3x"><i class="fa fa-circle fa-stack-2x text-primary-book"></i><i class="fa fa-heart fa-stack-1x fa-inverse-book"></i></span>
                             <h4 class="text-center section-heading-book"><strong>Romance</strong><br></h4>
                         </div>
                     </a></div>
-                <div class="col-md-4 col-book"><a class="booklink" href="#Action">
-                        <div class="divbook" style="box-shadow: 0px 0px 13px;"><span class="fa-stack fa-3x">Tt<i class="fa fa-circle fa-stack-2x text-primary-book" style="filter: blur(13px);"></i><i class="fa fa-rocket fa-stack-1x fa-inverse-book" style="filter: blur(0px);"></i></span>
+                <div class="col-md-3 d-flex flex-column col-book"><a class="booklink" href="#ScienceFiction">
+                        <div class="divbook"><span class="fa-stack fa-3x"><i class="fa fa-circle fa-stack-2x text-primary-book"></i><i class="fa fa-rocket fa-stack-1x fa-inverse-book"></i></span>
                             <h4 class="text-center section-heading-book"><strong>Science Fiction</strong><br></h4>
                         </div>
                     </a></div>
-                <div class="col-md-4 col-book"><a class="booklink" href="#Action">
-                        <div class="divbook" style="box-shadow: 0px 0px 13px;"><span class="fa-stack fa-3x">Tt<i class="fa fa-circle fa-stack-2x text-primary-book" style="filter: blur(13px);"></i><i class="fa fa-leaf fa-stack-1x fa-inverse-book" style="filter: blur(0px);"></i></span>
-                            <h4 class="text-center section-heading-book"><strong>Short Stories</strong><br></h4>
-                        </div>
-                    </a></div>
-                <div class="col-md-4 col-book"><a class="booklink" href="#Action">
-                        <div class="divbook" style="box-shadow: 0px 0px 13px;"><span class="fa-stack fa-3x">Tt<i class="fa fa-circle fa-stack-2x text-primary-book" style="filter: blur(13px);"></i><i class="fa fa-snapchat-ghost fa-stack-1x fa-inverse-book" style="filter: blur(0px);"></i></span>
-                            <h4 class="text-center section-heading-book"><strong>Thrillers</strong><br></h4>
-                        </div>
-                    </a></div>
-                <div class="col-md-4 col-book"><a class="booklink" href="#Action">
-                        <div class="divbook" style="box-shadow: 0px 0px 13px;"><span class="fa-stack fa-3x">Tt<i class="fa fa-circle fa-stack-2x text-primary-book" style="filter: blur(13px);"></i><i class="fa fa-female fa-stack-1x fa-inverse-book" style="filter: blur(0px);"></i></span>
+                <div class="col-md-3 d-flex flex-column col-book"><a class="booklink" href="#WomensFiction">
+                        <div class="divbook"><span class="fa-stack fa-3x"><i class="fa fa-circle fa-stack-2x text-primary-book"></i><i class="fa fa-female fa-stack-1x fa-inverse-book"></i></span>
                             <h4 class="text-center section-heading-book"><strong>Women's Fiction</strong><br></h4>
                         </div>
                     </a></div>
-                <div class="col-md-4 col-book"><a class="booklink" href="#Action">
-                        <div class="divbook" style="box-shadow: 0px 0px 13px;"><span class="fa-stack fa-3x">Tt<i class="fa fa-circle fa-stack-2x text-primary-book" style="filter: blur(13px);"></i><i class="fa fa-address-card fa-stack-1x fa-inverse-book" style="filter: blur(0px);"></i></span>
+                <div class="col-md-3 d-flex flex-column col-book"><a class="booklink" href="#Biographies">
+                        <div class="divbook"><span class="fa-stack fa-3x"><i class="fa fa-circle fa-stack-2x text-primary-book"></i><i class="fa fa-address-card fa-stack-1x fa-inverse-book"></i></span>
                             <h4 class="text-center section-heading-book">Biographies<br></h4>
                         </div>
                     </a></div>
-                <div class="col-md-4 col-book"><a class="booklink" href="#Action">
-                        <div class="divbook" style="box-shadow: 0px 0px 13px;"><span class="fa-stack fa-3x">Tt<i class="fa fa-circle fa-stack-2x text-primary-book" style="filter: blur(13px);"></i><i class="fa fa-spoon fa-stack-1x fa-inverse-book" style="filter: blur(0px);"></i></span>
+                <div class="col-md-3 d-flex flex-column col-book"><a class="booklink" href="#Cookbooks">
+                        <div class="divbook"><span class="fa-stack fa-3x"><i class="fa fa-circle fa-stack-2x text-primary-book"></i><i class="fa fa-spoon fa-stack-1x fa-inverse-book"></i></span>
                             <h4 class="text-center section-heading-book">Cookbooks<br></h4>
                         </div>
                     </a></div>
-                <div class="col-md-4 col-book"><a class="booklink" href="#Action">
-                        <div class="divbook" style="box-shadow: 0px 0px 13px;"><span class="fa-stack fa-3x">Tt<i class="fa fa-circle fa-stack-2x text-primary-book" style="filter: blur(13px);"></i><i class="fa fa-file-o fa-stack-1x fa-inverse-book" style="filter: blur(0px);"></i></span>
+                <div class="col-md-3 d-flex flex-column col-book"><a class="booklink" href="#Essays">
+                        <div class="divbook"><span class="fa-stack fa-3x"><i class="fa fa-circle fa-stack-2x text-primary-book"></i><i class="fa fa-file-o fa-stack-1x fa-inverse-book"></i></span>
                             <h4 class="text-center section-heading-book">Essays<br></h4>
                         </div>
                     </a></div>
-                <div class="col-md-4 col-book"><a class="booklink" href="#Action">
-                        <div class="divbook" style="box-shadow: 0px 0px 13px;"><span class="fa-stack fa-3x">Tt<i class="fa fa-circle fa-stack-2x text-primary-book" style="filter: blur(13px);"></i><i class="fa fa-institution fa-stack-1x fa-inverse-book" style="filter: blur(0px);"></i></span>
+                <div class="col-md-3 d-flex flex-column col-book"><a class="booklink" href="#History">
+                        <div class="divbook"><span class="fa-stack fa-3x"><i class="fa fa-circle fa-stack-2x text-primary-book"></i><i class="fa fa-institution fa-stack-1x fa-inverse-book"></i></span>
                             <h4 class="text-center section-heading-book">History<br></h4>
                         </div>
                     </a></div>
-                <div class="col-md-4 col-book"><a class="booklink" href="#Action">
-                        <div class="divbook" style="box-shadow: 0px 0px 13px;"><span class="fa-stack fa-3x">Tt<i class="fa fa-circle fa-stack-2x text-primary-book" style="filter: blur(13px);"></i><i class="fa fa-pencil-square-o fa-stack-1x fa-inverse-book" style="filter: blur(0px);"></i></span>
+                <div class="col-md-3 d-flex flex-column col-book"><a class="booklink" href="#Memoir">
+                        <div class="divbook"><span class="fa-stack fa-3x"><i class="fa fa-circle fa-stack-2x text-primary-book"></i><i class="fa fa-pencil-square-o fa-stack-1x fa-inverse-book"></i></span>
                             <h4 class="text-center section-heading-book">Memoir<br></h4>
                         </div>
                     </a></div>
-                <div class="col-md-4 col-book"><a class="booklink" href="#Action">
-                        <div class="divbook" style="box-shadow: 0px 0px 13px;"><span class="fa-stack fa-3x">Tt<i class="fa fa-circle fa-stack-2x text-primary-book" style="filter: blur(13px);"></i><i class="fa fa-pencil fa-stack-1x fa-inverse-book" style="filter: blur(0px);"></i></span>
+                <div class="col-md-3 d-flex flex-column col-book"><a class="booklink" href="#Poetry">
+                        <div class="divbook"><span class="fa-stack fa-3x"><i class="fa fa-circle fa-stack-2x text-primary-book"></i><i class="fa fa-pencil fa-stack-1x fa-inverse-book" style="opacity: 1;"></i></span>
                             <h4 class="text-center section-heading-book">Poetry<br></h4>
                         </div>
                     </a></div>
-                <div class="col-md-4 col-book"><a class="booklink" href="#Action">
-                        <div class="divbook" style="box-shadow: 0px 0px 13px;"><span class="fa-stack fa-3x">Tt<i class="fa fa-circle fa-stack-2x text-primary-book" style="filter: blur(13px);"></i><i class="fa fa-universal-access fa-stack-1x fa-inverse-book" style="filter: blur(0px);"></i></span>
+                <div class="col-md-3 d-flex flex-column col-book"><a class="booklink" href="#SelfHelp">
+                        <div class="divbook"><span class="fa-stack fa-3x"><i class="fa fa-circle fa-stack-2x text-primary-book"></i><i class="fa fa-universal-access fa-stack-1x fa-inverse-book"></i></span>
                             <h4 class="text-center section-heading-book">Self-Help<br></h4>
                         </div>
                     </a></div>
-                <div class="col-md-4 col-book"><a class="booklink" href="#Action">
-                        <div class="divbook" style="box-shadow: 0px 0px 13px;"><span class="fa-stack fa-3x">Tt<i class="fa fa-circle fa-stack-2x text-primary-book" style="filter: blur(13px);"></i><i class="fa fa-user-secret fa-stack-1x fa-inverse-book" style="filter: blur(0px);"></i></span>
+                <div class="col-md-3 d-flex flex-column col-book"><a class="booklink" href="#TrueCrime">
+                        <div class="divbook"><span class="fa-stack fa-3x"><i class="fa fa-circle fa-stack-2x text-primary-book"></i><i class="fa fa-user-secret fa-stack-1x fa-inverse-book"></i></span>
                             <h4 class="text-center section-heading-book">True Crime<br></h4>
                         </div>
                     </a></div>
             </div>
         </div>
     </section>
-    <section id="Adventure"></section>
-    <section class="bg-light" id="portfolio" style="padding: 150px 0px;background: rgb(219,226,234);">
-        <div class="container">
+    <section class="bg-light mainbook" id="Adventure">
+        <div class="container detailkind">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="text-uppercase section-heading">ADVENTURE</h2>
-                    <h3 class="text-muted section-subheading">Heading</h3>
+                    <h3 class="iconbook"><i class="fa fa-motorcycle icon"></i></h3>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/anh-chang-hobbit.jpg"></a>
-                    <div class="portfolio-caption">
+            <div class="row booklist">
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/anh-chang-hobbit.jpg"></a>
+                    <div class="booknameauthor">
                         <h4>Anh chàng Hobbit&nbsp;</h4>
-                        <p class="text-muted">J.R.R Tolkien</p>
+                        <p class="author">J.R.R Tolkien</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/dao-giau-vang.jpg"></a>
-                    <div class="portfolio-caption">
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/dao-giau-vang.jpg"></a>
+                    <div class="booknameauthor">
                         <h4>Đảo giấu vàng</h4>
-                        <p class="text-muted">Robert Louis Stevenson</p>
+                        <p class="author">Robert Louis Stevenson</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/dat-rung-phuong-nam.jpg"></a>
-                    <div class="portfolio-caption">
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/dat-rung-phuong-nam.jpg"></a>
+                    <div class="booknameauthor">
                         <h4 style="font-size: 21.25px;">Đất rừng Phương Nam</h4>
-                        <p class="text-muted">Đoàn Giỏi</p>
+                        <p class="author">Đoàn Giỏi</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/hai-van-dam-duoi-bien.jpg"></a>
-                    <div class="portfolio-caption">
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/hai-van-dam-duoi-bien.jpg"></a>
+                    <div class="booknameauthor">
                         <h4 style="font-size: 21.25px;">Hai vạn dặm dưới biển</h4>
-                        <p class="text-muted">Jules Verne</p>
+                        <p class="author">Jules Verne</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/nhung-cuoc-phieu-luu-cua-huckleberry-finn.jpg"></a>
-                    <div class="portfolio-caption">
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/nhung-cuoc-phieu-luu-cua-huckleberry-finn.jpg"></a>
+                    <div class="booknameauthor">
                         <h4 style="font-size: 21.25px;">Những cuộc phiêu lưu của Huckleberry Finn</h4>
-                        <p class="text-muted">Mark Twain</p>
+                        <p class="author">Mark Twain</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/phuong-dong-luot-ngoai-cua-so.jpg"></a>
-                    <div class="portfolio-caption">
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/phuong-dong-luot-ngoai-cua-so.jpg"></a>
+                    <div class="booknameauthor">
                         <h4 style="font-size: 21.25px;">Phương Đông lướt ngoài cửa sổ</h4>
-                        <p class="text-muted">Paul Theroux</p>
+                        <p class="author">Paul Theroux</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light mainbook" id="Classic">
+        <div class="container detailkind">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">Classic</h2>
+                    <h3 class="iconbook"><i class="fa fa-cube icon"></i></h3>
+                </div>
+            </div>
+            <div class="row booklist">
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Classics/Tiếng%20gọi%20của%20hoang%20dã.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Tiếng gọi của hoang dã</h4>
+                        <p class="author">Jack London</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Classics/giết%20con%20chim%20nhại.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Giết con chim nhại</h4>
+                        <p class="author">Harper Lee</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Classics/Hai%20số%20phận.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Hai Số Phận</h4>
+                        <p class="author">Jeffrey Archer</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Classics/Kiêu%20hãnh%20và%20định%20kiến.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Kiêu hãnh và định kiến</h4>
+                        <p class="author">JD Salinger<br></p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Classics/bia-bat-tre-dong-xanh-in_2.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Bắt trẻ đồng xanh</h4>
+                        <p class="author">Jane Austen<br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light mainbook" id="GraphicNovel">
+        <div class="container detailkind">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">Graphic Novel</h2>
+                    <h3 class="iconbook"><i class="fa fa-paint-brush"></i></h3>
+                </div>
+            </div>
+            <div class="row booklist">
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Graphic%20Novel/Bách%20Khoa%20toàn%20thư%20thực%20hành%20hội%20họa.png"></a>
+                    <div class="booknameauthor">
+                        <h4>Bách Khoa toàn thư thực hành hội họa</h4>
+                        <p class="author">Jean Erestein</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Graphic%20Novel/Đi%20vẽ%20-%20Nhật%20ký%20hội%20họa%202014.png"></a>
+                    <div class="booknameauthor">
+                        <h4>Đi vẽ - Nhật ký hội họa 2014</h4>
+                        <p class="author">Trịnh Lữ</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Graphic%20Novel/Kỹ%20thuật%20vẽ%20người%20bằng%20nét%20bút%20đơn%20giản.png"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Kỹ thuật vẽ người bằng nét bút đơn giản</h4>
+                        <p class="author">Hiền Dương</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Graphic%20Novel/leonardo%20da%20vinci.png"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;"><strong>Leonardo da Vinci</strong><br></h4>
+                        <p class="author">Walter Issacson</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Graphic%20Novel/Nguyên%20lý%20hội%20họa%20đen%20trắng.png"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Nguyên lý hội họa đen trắng</h4>
+                        <p class="author">Vương Hoằng Lực</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Graphic%20Novel/Van%20Gogh.png"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Van Gogh</h4>
+                        <p class="author">David Harzior</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light mainbook" id="Detective">
+        <div class="container detailkind">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">Detective</h2>
+                    <h3 class="iconbook"><i class="fa fa-search"></i></h3>
+                </div>
+            </div>
+            <div class="row booklist">
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Detective/Bạch%20Dạ%20Hành.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Bạch Dạ Hành</h4>
+                        <p class="author">Higashino Keigo<br></p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Detective/Hỏa%20Ngục.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Hỏa ngục</h4>
+                        <p class="author">Dan Brown</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Detective/Phía%20sau%20nghi%20can%20X.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Phía sau nghi can X</h4>
+                        <p class="author">Higashino Keigo</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Detective/Thú%20tội.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Thú tội</h4>
+                        <p class="author">Kanae Minato</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Detective/Tiếng%20vọng%20trong%20lòng%20đất.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Tiếng vọng trong lòng đất</h4>
+                        <p class="author">Mike Omer</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Detective/Sherlock%20Holmes.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Sherlock Holmes tập 2</h4>
+                        <p class="author">Athur Conan Doyle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light mainbook" id="Fantasy">
+        <div class="container detailkind">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">Fantasy</h2>
+                    <h3 class="iconbook"><i class="fa fa-lightbulb-o"></i></h3>
+                </div>
+            </div>
+            <div class="row booklist">
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Fantasy/Chúa%20Tể%20Những%20Chiếc%20Nhẫn%20-%20Đoàn%20Hộ%20Nhẫn.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Chúa Tể Những Chiếc Nhẫn 1 - Đoàn Hộ Nhẫn</h4>
+                        <p class="author">J.R.R Tolkien</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Fantasy/Đỏ%20trỗi%20dậy%202%20-%20Đứa%20con%20hoàng%20kim.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Đỏ Trỗi Dậy 2 - Đứa Con Hoàng Kim</h4>
+                        <p class="author">Pierce Brown</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Fantasy/Harry%20Potter%20và%20Hoàng%20tử%20Lai.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Harry Potter 6 - Hoàng Tử Lai</h4>
+                        <p class="author">J.K Rowling</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Fantasy/Người%20hóa%20thú%205%20-%20Thú%20Săn%20Mồi.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Animorphs Người hóa thú 5 - Thú Săn Mồi</h4>
+                        <p class="author">Katherine AppleGate</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Fantasy/Liêu%20trai%20chí%20dị.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Liêu Trai Chí Dị</h4>
+                        <p class="author">Bồ Tùng Linh</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Fantasy/Thần%20Thoại%20Bắc%20Âu.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Thần Thoại Bắc Âu</h4>
+                        <p class="author">Neil Gaiman</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light mainbook" id="HistoricalFiction">
+        <div class="container detailkind">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">Historical Fiction</h2>
+                    <h3 class="iconbook"><i class="fa fa-fort-awesome"></i></h3>
+                </div>
+            </div>
+            <div class="row booklist">
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Historical%20Fiction/Chiến%20Tranh%20&%20Hòa%20Bình%203.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Chiến Tranh &amp; Hòa Bình 2</h4>
+                        <p class="author">Lev Tolstoy</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Historical%20Fiction/Lão%20Goriot.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Lão Goriot</h4>
+                        <p class="author">Honoré de Balzac</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Historical%20Fiction/Tam%20Quốc%20Diễn%20Nghĩa%202.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Tam Quốc Diễn Nghĩa 2</h4>
+                        <p class="author">La Quán Trung</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Historical%20Fiction/Tam%20Quốc%20Diễn%20Nghĩa%203.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Tam Quốc Diễn Nghĩa 1</h4>
+                        <p class="author">La Quán Trung</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light mainbook" id="Horror">
+        <div class="container detailkind">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">Horror/THRILLERS</h2>
+                    <h3 class="iconbook"><i class="fa fa-optin-monster"></i></h3>
+                </div>
+            </div>
+            <div class="row booklist">
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Horror/A%20Taste%20For%20Monster.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Anh chàng Hobbit&nbsp;</h4>
+                        <p class="author">Matthew J Kirby</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Horror/It.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>It</h4>
+                        <p class="author">Stephen King</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Horror/The%20Haunting%20of%20Hill%20House.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">The Haulting of Hill House</h4>
+                        <p class="author">Shirley Jackson</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Horror/The%20Killing%20Jar.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">The Killing Jar</h4>
+                        <p class="author">Jennifer Bosworth</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Horror/The%20Winter%20People.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">The Winter People</h4>
+                        <p class="author">Jennifer McMahon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light mainbook" id="LiteraryFiction">
+        <div class="container detailkind">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">Literary Fiction</h2>
+                    <h3 class="iconbook"><i class="fa fa-pagelines"></i></h3>
+                </div>
+            </div>
+            <div class="row booklist">
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Literary%20Fiction/Hoàng%20tử%20bé.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Hoàng Tử Bé&nbsp;</h4>
+                        <p class="author">Antonie de Saint, Exupe'ry</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Literary%20Fiction/Khi%20lỗi%20thuộc%20về%20các%20vì%20sao.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Khi Lỗi Thuộc Về Các Vì Sao</h4>
+                        <p class="author">John Green</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Literary%20Fiction/Tuổi%20thơ%20dữ%20dội.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Tuổi Thơ Dữ Dội</h4>
+                        <p class="author">Phùng Quán</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Literary%20Fiction/Số%20đỏ.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Số Đỏ</h4>
+                        <p class="author">Vũ Trọng Phụng</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Literary%20Fiction/Tắt%20đèn.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Tắt Đèn</h4>
+                        <p class="author">Ngô Tất Tố</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Literary%20Fiction/Không%20gia%20đình.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Không Gia Đình</h4>
+                        <p class="author">Hector Malot</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Literary%20Fiction/Ông%20già%20và%20biển%20cả.jpeg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Ông Già và Biển Cả</h4>
+                        <p class="author">Ernest Hemingway</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light mainbook" id="Romance">
+        <div class="container detailkind">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">Romance</h2>
+                    <h3 class="iconbook"><i class="fa fa-heart"></i></h3>
+                </div>
+            </div>
+            <div class="row booklist">
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Romance/Cuốn%20Theo%20Chiều%20Gió.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Cuốn Theo Chiều Gió</h4>
+                        <p class="author">Maraget Mitchell</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Romance/Rừng%20Nauy.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Rừng Na Uy</h4>
+                        <p class="author">Murakami</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Romance/Trước%20ngày%20em%20đến.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Trước Ngày Em Đến</h4>
+                        <p class="author">Jojo Moyes</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Romance/Lụa.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Lụa</h4>
+                        <p class="author">Alessandro Baricco</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Romance/Hồng%20Lâu%20Mộng.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Hồng Lâu Mộng</h4>
+                        <p class="author">Tào Tuyết Cần, Cao Ngạc</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Classics/Kiêu%20hãnh%20và%20định%20kiến.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Kiêu hãnh và định kiến</h4>
+                        <p class="author">JD Salinger<br></p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Literary%20Fiction/Khi%20lỗi%20thuộc%20về%20các%20vì%20sao.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Khi Lỗi Thuộc Về Các Vì Sao</h4>
+                        <p class="author">John Green</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light mainbook" id="ScienceFiction">
+        <div class="container detailkind">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">ScienCe Fiction</h2>
+                    <h3 class="iconbook"><i class="fa fa-rocket"></i></h3>
+                </div>
+            </div>
+            <div class="row booklist">
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Science%20Fiction/451%20Độ.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>451 Độ</h4>
+                        <p class="author">Ray BradBury</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Science%20Fiction/Chuyện%20người%20tùy%20nữ.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Chuyện Người Tùy Nữ</h4>
+                        <p class="author">Maraget Atwood</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Science%20Fiction/Người%20Truyền%20Ký%20Ức.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Người Truyền Kí Ức</h4>
+                        <p class="author">Lois Lowry</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Science%20Fiction/Tam%20Thể%201.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Tam Thể 1</h4>
+                        <p class="author">Lưu Từ Hân</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/hai-van-dam-duoi-bien.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Hai vạn dặm dưới biển</h4>
+                        <p class="author">Jules Verne</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Fantasy/Đỏ%20trỗi%20dậy%202%20-%20Đứa%20con%20hoàng%20kim.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Đỏ Trỗi Dậy 2 - Đứa Con Hoàng Kim</h4>
+                        <p class="author">Pierce Brown</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light mainbook" id="WomensFiction">
+        <div class="container detailkind">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">Women's Fiction</h2>
+                    <h3 class="iconbook"><i class="fa fa-female"></i></h3>
+                </div>
+            </div>
+            <div class="row booklist">
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Women%27s%20Fiction/Chiến%20Tranh%20Không%20Có%20Một%20Khuôn%20Mặt%20Phụ%20Nữ.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Chiến Tranh Không Có Một Khuôn Mặt Phụ Nữ</h4>
+                        <p class="author">Svetlana Alexievich</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Women%27s%20Fiction/Nhẫn%20Thạch.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Nhẫn Thạch</h4>
+                        <p class="author">Atiq Rahimi</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Science%20Fiction/Chuyện%20người%20tùy%20nữ.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Chuyện Người Tùy Nữ</h4>
+                        <p class="author">Maraget Atwood</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Romance/Cuốn%20Theo%20Chiều%20Gió.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Cuốn Theo Chiều Gió</h4>
+                        <p class="author">Maraget Mitchell</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Classics/Kiêu%20hãnh%20và%20định%20kiến.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Kiêu hãnh và định kiến</h4>
+                        <p class="author">JD Salinger<br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light mainbook" id="Biographies">
+        <div class="container detailkind">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">Biographies</h2>
+                    <h3 class="iconbook"><i class="fa fa-address-card"></i></h3>
+                </div>
+            </div>
+            <div class="row booklist">
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Biographies/Bill%20Gate.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Anh chàng Hobbit&nbsp;</h4>
+                        <p class="author">J.R.R Tolkien</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Biographies/Cha%20Tôi.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Đảo giấu vàng</h4>
+                        <p class="author">Robert Louis Stevenson</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Biographies/Damn%20Right.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Đất rừng Phương Nam</h4>
+                        <p class="author">Đoàn Giỏi</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Biographies/Einstein.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Hai vạn dặm dưới biển</h4>
+                        <p class="author">Jules Verne</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Biographies/Madam%20Nhu.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Những cuộc phiêu lưu của Huckleberry Finn</h4>
+                        <p class="author">Mark Twain</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Biographies/Võ%20Nguyên%20Giáp.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Những cuộc phiêu lưu của Huckleberry Finn</h4>
+                        <p class="author">Mark Twain</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Biographies/Thế%20Giới%20Khác%20Đi.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Phương Đông lướt ngoài cửa sổ</h4>
+                        <p class="author">Paul Theroux</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light mainbook" id="Cookbooks">
+        <div class="container detailkind">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">health</h2>
+                    <h3 class="iconbook"><i class="fa fa-spoon"></i></h3>
+                </div>
+            </div>
+            <div class="row booklist">
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Health/Ăn%20Xanh%20Để%20Khỏe.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Ăn Xanh Để Khỏe</h4>
+                        <p class="author">Norman W.Walker</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Health/Dinh%20Dưỡng%20Xanh%20Sống%20Khỏe%20Mạnh.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Dinh Dưỡng Xanh Sống Khỏe Mạnh</h4>
+                        <p class="author">Watayou Takaho</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Health/Green%20Smoothies.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Green Smoothies</h4>
+                        <p class="author">Emma Phạm</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Health/Nằm%20Ngủ%20Đúng%20Lúc%20Một%20Đời%20Sung%20Túc.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Nằm Ngủ Đúng Lúc Một Đời Sung Túc&nbsp;</h4>
+                        <p class="author">Oopsy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light mainbook" id="Essays">
+        <div class="container detailkind">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">ESSAYS</h2>
+                    <h3 class="iconbook"><i class="fa fa-file-o"></i></h3>
+                </div>
+            </div>
+            <div class="row booklist">
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/anh-chang-hobbit.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Anh chàng Hobbit&nbsp;</h4>
+                        <p class="author">J.R.R Tolkien</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/dao-giau-vang.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Đảo giấu vàng</h4>
+                        <p class="author">Robert Louis Stevenson</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/dat-rung-phuong-nam.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Đất rừng Phương Nam</h4>
+                        <p class="author">Đoàn Giỏi</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/hai-van-dam-duoi-bien.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Hai vạn dặm dưới biển</h4>
+                        <p class="author">Jules Verne</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/nhung-cuoc-phieu-luu-cua-huckleberry-finn.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Những cuộc phiêu lưu của Huckleberry Finn</h4>
+                        <p class="author">Mark Twain</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/phuong-dong-luot-ngoai-cua-so.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Phương Đông lướt ngoài cửa sổ</h4>
+                        <p class="author">Paul Theroux</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light mainbook" id="History">
+        <div class="container detailkind">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">HISTORY</h2>
+                    <h3 class="iconbook"><i class="fa fa-university"></i></h3>
+                </div>
+            </div>
+            <div class="row booklist">
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/anh-chang-hobbit.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Anh chàng Hobbit&nbsp;</h4>
+                        <p class="author">J.R.R Tolkien</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/dao-giau-vang.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Đảo giấu vàng</h4>
+                        <p class="author">Robert Louis Stevenson</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/dat-rung-phuong-nam.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Đất rừng Phương Nam</h4>
+                        <p class="author">Đoàn Giỏi</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/hai-van-dam-duoi-bien.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Hai vạn dặm dưới biển</h4>
+                        <p class="author">Jules Verne</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/nhung-cuoc-phieu-luu-cua-huckleberry-finn.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Những cuộc phiêu lưu của Huckleberry Finn</h4>
+                        <p class="author">Mark Twain</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/phuong-dong-luot-ngoai-cua-so.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Phương Đông lướt ngoài cửa sổ</h4>
+                        <p class="author">Paul Theroux</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light mainbook" id="Memoir">
+        <div class="container detailkind">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">MEMOIR</h2>
+                    <h3 class="iconbook"><i class="fa fa-pencil-square-o"></i></h3>
+                </div>
+            </div>
+            <div class="row booklist">
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/anh-chang-hobbit.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Anh chàng Hobbit&nbsp;</h4>
+                        <p class="author">J.R.R Tolkien</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/dao-giau-vang.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Đảo giấu vàng</h4>
+                        <p class="author">Robert Louis Stevenson</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/dat-rung-phuong-nam.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Đất rừng Phương Nam</h4>
+                        <p class="author">Đoàn Giỏi</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/hai-van-dam-duoi-bien.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Hai vạn dặm dưới biển</h4>
+                        <p class="author">Jules Verne</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/nhung-cuoc-phieu-luu-cua-huckleberry-finn.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Những cuộc phiêu lưu của Huckleberry Finn</h4>
+                        <p class="author">Mark Twain</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/phuong-dong-luot-ngoai-cua-so.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Phương Đông lướt ngoài cửa sổ</h4>
+                        <p class="author">Paul Theroux</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light mainbook" id="Poetry">
+        <div class="container detailkind">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">POETRY</h2>
+                    <h3 class="iconbook"><i class="fa fa-pencil"></i></h3>
+                </div>
+            </div>
+            <div class="row booklist">
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/anh-chang-hobbit.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Anh chàng Hobbit&nbsp;</h4>
+                        <p class="author">J.R.R Tolkien</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/dao-giau-vang.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Đảo giấu vàng</h4>
+                        <p class="author">Robert Louis Stevenson</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/dat-rung-phuong-nam.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Đất rừng Phương Nam</h4>
+                        <p class="author">Đoàn Giỏi</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/hai-van-dam-duoi-bien.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Hai vạn dặm dưới biển</h4>
+                        <p class="author">Jules Verne</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/nhung-cuoc-phieu-luu-cua-huckleberry-finn.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Những cuộc phiêu lưu của Huckleberry Finn</h4>
+                        <p class="author">Mark Twain</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/phuong-dong-luot-ngoai-cua-so.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Phương Đông lướt ngoài cửa sổ</h4>
+                        <p class="author">Paul Theroux</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light mainbook" id="SelfHelp">
+        <div class="container detailkind">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">sELF-HELP</h2>
+                    <h3 class="iconbook"><i class="fa fa-universal-access"></i></h3>
+                </div>
+            </div>
+            <div class="row booklist">
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Self-Help/3%20Người%20thầy%20vĩ%20đại.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Ba Người Thầy Vĩ Đại</h4>
+                        <p class="author">Robin Sharma</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Self-Help/Bí%20mật%20của%20may%20mắn.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Bí Mật Của May Mắn</h4>
+                        <p class="author">Alex Rovina -&nbsp; Fernando Trias De Bes</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Self-Help/Quẳng%20gánh%20lo%20đi%20và%20vui%20sống.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Quẳng Gánh Lo Đi &amp; Vui Sống</h4>
+                        <p class="author">Dale Carnegie</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Self-Help/Cà%20Phê%20Cùng%20Tony.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Cà Phê Cùng Tony</h4>
+                        <p class="author">Tony Buổi Sáng</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light mainbook" id="TrueCrime">
+        <div class="container detailkind">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">TRUE CRIME</h2>
+                    <h3 class="text-muted iconbook"><i class="fa fa-user-secret"></i></h3>
+                </div>
+            </div>
+            <div class="row booklist">
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/anh-chang-hobbit.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Anh chàng Hobbit&nbsp;</h4>
+                        <p class="author">J.R.R Tolkien</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/dao-giau-vang.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4>Đảo giấu vàng</h4>
+                        <p class="author">Robert Louis Stevenson</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/dat-rung-phuong-nam.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Đất rừng Phương Nam</h4>
+                        <p class="author">Đoàn Giỏi</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/hai-van-dam-duoi-bien.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Hai vạn dặm dưới biển</h4>
+                        <p class="author">Jules Verne</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/nhung-cuoc-phieu-luu-cua-huckleberry-finn.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Những cuộc phiêu lưu của Huckleberry Finn</h4>
+                        <p class="author">Mark Twain</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3 bookdetail"><a class="portfolio-link" href="Player.html"><img class="img-fluid" src="assets/img/Adventure/phuong-dong-luot-ngoai-cua-so.jpg"></a>
+                    <div class="booknameauthor">
+                        <h4 style="font-size: 21.25px;">Phương Đông lướt ngoài cửa sổ</h4>
+                        <p class="author">Paul Theroux</p>
                     </div>
                 </div>
             </div>
@@ -234,6 +1052,7 @@
         </div>
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/agency.js"></script>
     <script src="assets/js/book-lists.js"></script>
     <script src="assets/js/rating.js"></script>

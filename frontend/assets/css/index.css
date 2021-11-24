@@ -55,7 +55,7 @@ body {
 }
 
 #page-top {
-  background: linear-gradient(180deg, #ffc895 0%, #c8a3b5 50%, #2f4e68 100%);
+  background: rgba(227,192,164,0.54);
 }
 
 .page-section {
@@ -113,7 +113,7 @@ p {
 }
 
 a {
-  color: #e6a756;
+  color: #fed136;
 }
 
 .site-heading {
@@ -180,10 +180,6 @@ ul.social-buttons li a {
 
 a:hover {
   color: #fec503;
-}
-
-a:hover {
-  color: #cba72b;
 }
 
 section#contact .section-heading {
@@ -342,11 +338,6 @@ section h2.section-heading, section .section-heading.h2 {
   cursor: pointer;
 }
 
-a {
-  color: #fed136;
-  text-decoration: underline;
-}
-
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
   opacity: 1;
 }
@@ -409,11 +400,13 @@ a {
 #services {
   box-shadow: 0px 0px 8px rgb(33, 37, 41);
   padding: 100px 0px;
+  background: #ecd4ca;
 }
 
 #team {
-  box-shadow: 0px 0px 8px rgb(33, 37, 41);
+  box-shadow: 0px 0px 8px #212529;
   padding: 100px 0px;
+  background: #ecd4ca;
 }
 
 .colservices:not:first-child {
@@ -422,6 +415,7 @@ a {
 
 #contact {
   padding: 100px 0px;
+  background: url("../../assets/img/pexels-carmela-dinardo-1669648.jpg") center / cover no-repeat;
 }
 
 #portfolio {

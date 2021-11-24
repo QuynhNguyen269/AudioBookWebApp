@@ -3,11 +3,12 @@
 }
 
 .fa-inverse-book {
-  color: #fbe7de;
+  color: #000000;
 }
 
 #kindofbook {
-  background-image: url("../../assets/img/Background/star-sky.jpg");
+  padding: 100px 0px;
+  background: url("../../assets/img/Background/pexels-michelle-leman-6774546.jpg") center / cover no-repeat;
 }
 
 .section-heading.book {
@@ -19,20 +20,12 @@
   text-decoration: none;
 }
 
-div.col-book a:active, div.col-book a:focus, div.col-book a:hover {
-  color: #fed136;
-}
-
-div.divbook a:active, div.divbook a:focus, div.divbook a:hover {
-  box-shadow: 0px 0px 12px rgb(254,209,54);
-}
-
-div.colbook a:active, div.colbook a:focus, div.colbook a:hover {
-  box-shadow: 0px 0px 12px rgb(254,209,54);
+.col-book:hover {
+  box-shadow: 0px 0px 13px #fec504;
 }
 
 .booklink {
-  color: rgba(47,23,15,0.88);
+  color: rgba(0,0,0,0.88);
 }
 
 i.fa.fa-circle.fa-stack-2x.text-primary-book a:active, i.fa.fa-circle.fa-stack-2x.text-primary-book a:focus, i.fa.fa-circle.fa-stack-2x.text-primary-book a:hover {
@@ -49,14 +42,75 @@ i.fa.fa-circle.fa-stack-2x.text-primary-book a:active, i.fa.fa-circle.fa-stack-2
   }
 }
 
-.divbook {
+.col-book {
   background-color: rgba(251,231,222,0.25);
   border-radius: 40px;
   margin: 15px;
+  box-shadow: 0px 0px 13px;
 }
 
 .section-headingbook {
   font-size: 50px;
-  color: #fed136;
+  color: #fec504;
+}
+
+.mainbook {
+  padding: 100px 0px 0px 0px;
+  background: rgb(219,226,234);
+  text-align: center;
+  background: url("../../assets/img/Background/pexels-michelle-leman-6774546.jpg") center / cover no-repeat;
+}
+
+.fa.fa-circle.fa-stack-2x.text-primary-book {
+  filter: blur(70px);
+}
+
+.col-book:hover .fa.fa-circle.fa-stack-2x.text-primary-book {
+  filter: blur(20px);
+}
+
+.col-book:hover .fa-stack-1x.fa-inverse-book {
+  color: #cfd1d8;
+}
+
+.booknameauthor {
+  margin-top: 10px;
+}
+
+.iconbook:hover i {
+  color: #2f170cfc;
+  cursor: pointer;
+}
+
+.detailkindtop {
+  opacity: 1;
+  backdrop-filter: blur(10px);
+  background: #2f170f83;
+  border-radius: 40px;
+  padding: 20px 0px;
+}
+
+.detailkind {
+  opacity: 1;
+  border-radius: 40px;
+  padding: 20px 0px;
+}
+
+.iconbook {
+  color: #cfd1d8;
+}
+
+.icon {
+  color: rgb(255,255,255);
+}
+
+.bookdetail {
+  margin: 15px;
+}
+
+.booklist {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
 }
 

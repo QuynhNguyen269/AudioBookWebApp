@@ -59,7 +59,38 @@
 
 .w-lg-75.w-xl-50 {
   filter: blur(0px);
-  box-shadow: 0px 0px 1px rgb(0,0,0);
+  box-shadow: 0px 0px 4px rgb(0,0,0);
   padding: 20px;
+  background: rgba(227,215,203,0.6);
+}
+
+.exp {
+  max-width: 100%;
+  height: auto;
+}
+
+.demo {
+  margin: 0px 10px;
+  box-shadow: 0px 0px 9px rgba(33,37,41,0.66);
+}
+
+.beefooter:hover svg {
+  color: #fed136;
+}
+
+#book .p {
+  color: #cfd1d8;
+}
+
+#book p {
+  color: rgba(47,23,15,0.88);
+}
+
+.forgotpass {
+  color: #c29f27;
+}
+
+.fa.fa-book.bookshort {
+  margin-left: 10px;
 }
 

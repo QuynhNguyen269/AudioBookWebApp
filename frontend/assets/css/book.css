@@ -57,6 +57,7 @@ i.fa.fa-circle.fa-stack-2x.text-primary-book a:active, i.fa.fa-circle.fa-stack-2
 .mainbook {
   padding: 100px 0px 0px 0px;
   background: rgb(219,226,234);
+  backdrop-filter: blur(10px);
   text-align: center;
   background: url("../../assets/img/Background/pexels-michelle-leman-6774546.jpg") center / cover no-repeat;
 }
@@ -77,8 +78,8 @@ i.fa.fa-circle.fa-stack-2x.text-primary-book a:active, i.fa.fa-circle.fa-stack-2
   margin-top: 10px;
 }
 
-.iconbook:hover i {
-  color: #2f170cfc;
+.icon:hover {
+  color: #2f170c;
   cursor: pointer;
 }
 
@@ -101,7 +102,7 @@ i.fa.fa-circle.fa-stack-2x.text-primary-book a:active, i.fa.fa-circle.fa-stack-2
 }
 
 .icon {
-  color: rgb(255,255,255);
+  color: #2f170c7b;
 }
 
 .bookdetail {
@@ -112,5 +113,13 @@ i.fa.fa-circle.fa-stack-2x.text-primary-book a:active, i.fa.fa-circle.fa-stack-2
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+}
+
+#book p {
+  color: rgba(47,23,15,0.88);
+}
+
+.company-name {
+  color: #8f9296!important;
 }
 

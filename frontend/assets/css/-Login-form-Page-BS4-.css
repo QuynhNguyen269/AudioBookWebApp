@@ -82,15 +82,19 @@
   color: #cfd1d8;
 }
 
-#book p {
-  color: rgba(47,23,15,0.88);
-}
-
 .forgotpass {
   color: #c29f27;
 }
 
 .fa.fa-book.bookshort {
   margin-left: 10px;
+}
+
+.bookname {
+  text-transform: capitalize;
+}
+
+.footer {
+  color: #fff!important;
 }
 

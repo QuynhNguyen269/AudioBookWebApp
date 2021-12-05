@@ -1,0 +1,54 @@
+.detailkindtopms {
+  opacity: 1;
+  backdrop-filter: blur(10px);
+  background: rgba(166,182,152,0.89);
+  border-radius: 40px;
+  padding: 20px 0px;
+}
+
+.col-music:hover {
+  box-shadow: 0px 0px 13px #e4eaea;
+}
+
+.col-music {
+  background-color: rgba(251,231,222,0.25);
+  border-radius: 40px;
+  margin: 15px;
+  box-shadow: 0px 0px 13px;
+}
+
+.musiclink:hover {
+  color: #a89118;
+}
+
+.musiclink {
+  color: #000000;
+  text-decoration: none;
+}
+
+.mainmusic {
+  padding: 100px 0px 0px 0px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.detailkindms {
+  opacity: 1;
+  border-radius: 40px;
+  padding: 20px 0px;
+  background: #cdd3d3;
+}
+
+#kindofmusic {
+  padding: 100px 0px;
+  background: url("../../assets/img/pexels-screen-post-4526424.jpg") center / cover no-repeat;
+}
+
+.iconmusic {
+  color: #7d7f25;
+}
+
+#Relax {
+  padding-bottom: 100px;
+}
+

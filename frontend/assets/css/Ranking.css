@@ -1,14 +1,8 @@
 .bookname-ranking {
-  font-size: xx-large;
   text-transform: capitalize;
 }
 
-.bookauthor-ranking {
-  font-size: x-large;
-}
-
 .star-rating {
-  font-size: xx-large;
   color: #fed136;
 }
 
@@ -20,6 +14,7 @@
 
 .bookranking {
   font-size: x-large;
+  margin-bottom: 30PX;
 }
 
 .filter {
@@ -33,5 +28,9 @@
 
 .menufilter {
   cursor: pointer;
+}
+
+.bookauthor-ranking {
+  font-size: medium;
 }
 

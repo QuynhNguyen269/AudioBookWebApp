@@ -1,0 +1,60 @@
+#kindofpodcast {
+  padding: 100px 0px;
+  background: url("../../assets/img/pexels-screen-post-4526424.jpg") center / cover no-repeat;
+}
+
+.detailkindtoppc {
+  opacity: 1;
+  backdrop-filter: blur(10px);
+  background: rgba(131,154,160,0.8);
+  border-radius: 40px;
+  padding: 20px 0px;
+}
+
+.section-headingpodcast {
+  font-size: 50px;
+  color: #566024;
+}
+
+.col-podcast:hover {
+  box-shadow: 0px 0px 13px #e1eef3;
+}
+
+.col-podcast {
+  background-color: rgba(251,231,222,0.25);
+  border-radius: 40px;
+  margin: 15px;
+  box-shadow: 0px 0px 13px;
+}
+
+.podcastlink:hover {
+  color: #1f4858;
+}
+
+.podcastlink {
+  color: #000000;
+  text-decoration: none;
+}
+
+.text-primary-podcast {
+  color: #f1f6fa !important;
+  filter: blur(70px);
+}
+
+.mainpodcast {
+  padding: 100px 0px 0px 0px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.detailkindpc {
+  opacity: 1;
+  border-radius: 40px;
+  padding: 20px 0px;
+  background: rgb(183,198,198);
+}
+
+.iconpodcast {
+  color: #8b9ea6;
+}
+

@@ -36,7 +36,7 @@
   opacity: 1;
   border-radius: 40px;
   padding: 20px 0px;
-  background: #cdd3d3;
+  background: rgba(169,185,157,0.72);
 }
 
 #kindofmusic {
@@ -46,9 +46,5 @@
 
 .iconmusic {
   color: #7d7f25;
-}
-
-#Relax {
-  padding-bottom: 100px;
 }
 
